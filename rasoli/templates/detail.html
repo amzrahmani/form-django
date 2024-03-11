@@ -1,0 +1,7 @@
+{%extends 'base.html'%}
+{%block contend%}
+
+<h2> {{post.body}}</h2>
+<small>{{post.date}}</small><br>
+<a href="{%url 'delete' post.id%}" class="btn btn-danger">DELETE</a>
+{%endblock%}
